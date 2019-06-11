@@ -1,0 +1,17 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+:host {
+
+    .home {
+        padding: 0 0;
+
+        .footer {
+            border-top: 1px solid $main-bg-color;
+
+            .subfooter{
+                border-top: 2px solid #ccc;         
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+:host {
+    @include respond-to(all-screens-sm) {
+        .carousel-title {
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+        }
+    }
+    .carousel {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .carousel-indicators {
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 50% !important;
+                margin: 5px;
+            }
+        }
+        .carousel-inner {
+            background: url('../../../../assets/images/h2.png') no-repeat center;
+            cursor: grabbing;
+            .carousel-item {
+                background-color: rgba(0, 0, 0, 0.5);
+                .carousel-title {
+                    margin-bottom: -100%;
+                    padding-top: 30px;
+                    h1 {
+                        @include font-thehill($foot-font, 2.5em, $white, bold)
+                    }
+                }
+                .col-lg-6 {
+                    // padding-top: 15%;
+                    text-align: center;
+                    p {
+                        @include font-thehill($thin-font,
+                        1.2em,
+                        $white,
+                        lighter);
+                        font-style: italic;
+                        line-height: 1.4em;
+                    }
+                    .author {
+                        font-style: normal;
+                        @include font-thehill($main-font,
+                        1.4em,
+                        $white,
+                        bold);
+                        margin-bottom: 0;
+                    }
+                    img {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

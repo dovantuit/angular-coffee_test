@@ -1,0 +1,31 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+:host {
+
+  .row {
+    // padding: 45px 100px 0 100px;
+    
+    .logo {
+      width: 150px;
+      height: 100px;
+      background: url('../../../../assets/images/logo/blacklogo.svg') no-repeat center;
+    }
+
+    .footer-desc {
+        // @include font-thehill($main-font, 0.9em, $main-bg-color, 500)
+    }
+
+    .social-block {
+        width: '100%';
+        margin-top: 20px;
+        text-align: center;
+
+        .social-button {
+            margin: 0 20px;
+            font-size: 1.5em;
+            color: $main-bg-color;
+        }
+    }
+  }
+}

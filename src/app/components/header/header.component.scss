@@ -1,0 +1,48 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+:host {
+
+  nav {
+    // padding: 45px 100px 0 100px;
+    
+    .logo {
+      width: 150px;
+      height: 100px;
+      background: url('../../../assets/images/logo/blacklogo.svg') no-repeat center;
+    }
+
+    .header-router {
+
+      ul {
+        border-bottom: 1px solid $main-bg-color;
+      }
+
+      li {
+        margin-right: 10px;
+      }
+
+      li:last-child {
+        margin-right: 0;  
+      }
+
+      a {
+        @include font-thehill($main-font, 0.9em, $main-bg-color, 500)
+      }
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background: url('../../../assets/images/menu.svg') center no-repeat;
+    }
+
+    .nav-item:hover {
+      .nav-link {
+        font-weight: bold;
+      }
+    }
+  }
+}
